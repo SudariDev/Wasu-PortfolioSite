@@ -1,0 +1,229 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  /* #contact, */
+  #projects {
+    height: fit-content;
+  }
+  #education .education-containers {
+    flex-wrap: wrap;
+  }
+  #education {
+    margin-bottom: 6rem; 
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display:none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .education-details-container {
+    align-items: center; 
+  }
+  .education-timeline-event {
+    flex-direction: column;
+    align-items: center; 
+    gap: 2rem; 
+  }
+  .education-timeline-date {
+    margin-bottom: 0.5rem; 
+  }
+  .education-timeline-content {
+    text-align: center; 
+  }
+  .education-sub-title {
+    font-size: 1.25rem; 
+  }
+  .education-insititute {
+    font-size: 1rem; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  #education {
+    margin-top: 2rem; /* Adjust margin for smaller screens */
+    margin-bottom: 2rem; /* Adjust margin for smaller screens */
+  }
+  .arrow {
+    display: inline-block;
+  }
+}
+
+/* Experience */
+@media screen and (max-width: 1200px) {
+  .experience-containers {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .experience-timeline-event {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .experience-timeline-content {
+    text-align: center;
+  }
+  .experience-timeline-date {
+    margin-bottom: 0.5rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .timeline-logo-ceb,
+  .timeline-logo-fiver {
+    width: 100px;
+    height: 100px;
+  }
+  .experience-timeline-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  .experience-timeline-content ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .experience-timeline-content ul li {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Skills section */
+@media screen and (max-width: 600px) {
+  .skill-details-container {
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .article-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .article {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+  .article .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact{
+    height: fit-content;
+  }
+
+ .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem; 
+  }
+
+  .contact-info-container {
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0.3rem 0; 
+  }
+
+  .contact-info-container p {
+    font-size: small; 
+  }
+
+  .email-icon {
+    height: 1.5rem; 
+  }
+}
+

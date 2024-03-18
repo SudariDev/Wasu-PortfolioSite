@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, 
+maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Wasundara profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Wasundara Samaranayaka</h1>
+        <p class="section__text__p2">Web Developer/Freelancer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a
+            href="https://www.linkedin.com/in/wasundara-samaranayaka/"
+            target="_blank"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/SudariDev" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/aboutme.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <p>
+                I’m a dedicated and optimistic SLIIT graduate with a strong
+                foundation in software engineering. Motivated by challenges, I
+                bring solid problem-solving skills, collaboration expertise, and
+                a passion for innovation. As a versatile programmer and
+                designer, I blend analytical thinking with creativity. Eager to
+                apply my skills and contribute to real‑world projects, I aspire
+                to a position where I can fully unleash my programming potential
+                and continue growing in the software engineering field.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+    <section id="education">
+      <p class="section__text__p1">Explore My Educational Journey</p>
+      <h1 class="title">Education</h1>
+      <div class="education-details-container">
+        <div class="education-containers">
+          <div class="timeline">
+            <div class="education-timeline-event">
+              <div class="education-timeline-date">2019-2023</div>
+              <div class="education-timeline-content">
+                <img
+                  src="./assets/Sliit.png"
+                  alt="SLIIT Logo"
+                  class="timeline-logo-sliit"
+                />
+                <h3 class="education-sub-title">
+                  B.Sc.Hons. in Information Technology
+                </h3>
+                <h3 class="education-insititute">
+                  Sri Lanka Institute Of Information Technology (SLIIT)
+                </h3>
+              </div>
+            </div>
+            <div class="education-timeline-event">
+              <div class="education-timeline-date">2019-2020</div>
+              <div class="education-timeline-content">
+                <img
+                  src="./assets/CA.png"
+                  alt="ICA Logo"
+                  class="timeline-logo-ca"
+                />
+                <h3 class="education-sub-title">
+                  Accounting and Business Management
+                </h3>
+                <h3 class="education-insititute">
+                  Institute of Chartered Accountants of Sri Lanka
+                </h3>
+              </div>
+            </div>
+            <div class="education-timeline-event">
+              <div class="education-timeline-date">2015-2017</div>
+              <div class="education-timeline-content">
+                <img
+                  src="./assets/KBV.png"
+                  alt="Kegalu Balika Vidyalaya Logo"
+                  class="timeline-logo-kbv"
+                />
+                <h3 class="education-sub-title">
+                  G.C.E-Advanced Level Examination-(2A,1B)
+                </h3>
+                <h3 class="education-insititute">Kegalu Balika Vidyalaya</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My Skills</p>
+      <h1 class="title">Skills</h1>
+      <div class="skill-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skill-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/java.png" alt="Java Icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/js.png" alt="JavaScript Icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/typeScript.png"
+                  alt="TypeScript Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/C.png" alt="C# Icon" class="icon" />
+                <div>
+                  <h3>C#</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="skill-sub-title">Frameworks & Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/React.png" alt="React Icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Angular.png"
+                  alt="Angular Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/expressJs.png"
+                  alt="Express JS Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/NetCore.png"
+                  alt=".NET Core Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.NET Core</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="skill-sub-title">Databases</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/ms Server.png"
+                  alt="MS Server Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS Server</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/MySQL.png" alt="MySQL Icon" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongodb.png"
+                  alt="MongoDB Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="skill-sub-title">Other Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/git.png" alt="Git Icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/github.png" alt="GitHub Icon" class="icon" />
+                <div>
+                  <h3>GitHub</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/html.png" alt="HTML Icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/css.png" alt="CSS Icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/docker.png" alt="Docker Icon" class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My Experience</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-containers">
+          <div class="experience-timeline-containers">
+            <div class="timeline">
+              <div class="experience-timeline-event">
+                <img
+                  src="./assets/ceb.png"
+                  alt="CEB Logo"
+                  class="timeline-logo-ceb"
+                />
+                <div class="experience-timeline-content">
+                  <div class="experience-timeline-date">
+                    2021 DEC ‑ 2022 JUNE
+                  </div>
+                  <h3 class="experience-sub-title">Ceylon Electricity Board</h3>
+                  <h3>Intern Software Engineer</h3>
+                  <ul>
+                    <li>
+                      Developed an E‑charging System for electric vehicle users
+                      across Sri Lanka.
+                    </li>
+                    <li>
+                      Designed and developed dynamic and responsive websites.
+                      (✅ Tech Stack: MEVN Stack)
+                    </li>
+                    <li>
+                      Collaborated with cross‑functional teams to architect REST
+                      API and deploy scalable backend solutions.
+                    </li>
+                    <li>
+                      Designed and verified proposed functionality
+                      implementations with senior engineers.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="experience-timeline-event">
+                <img
+                  src="./assets/fiver.png"
+                  alt="Five Logo"
+                  class="timeline-logo-fiver"
+                />
+                <div class="experience-timeline-content">
+                  <div class="experience-timeline-date">2024 - present</div>
+                  <h3 class="experience-sub-title">Fiver</h3>
+                  <h3>Beginner Level Freelancer</h3>
+                  <ul>
+                    <li>
+                      Custom website development using modern technologies. (✅
+                      Tech Stack: MERN Stack)
+                    </li>
+                    <li>
+                      Responsive design for seamless user experience across
+                      devices.
+                    </li>
+                    <li>
+                      Deployment and hosting assistance to make your project
+                      live.
+                    </li>
+                    <li>
+                      Collaborative approach - Your satisfaction is my priority!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <p>
+              Redesigning Bread Talk's website with enhanced navigation, visual
+              features, and improved usability. Utilizing Figma and Draw.io for
+              efficient design and planning.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <p>
+              Created E‑charging System for Sri Lanka's electric vehicles,
+              utilizing MEVN Stack. Collaborated with teams to architect
+              scalable backend solutions
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SudariDev/Ev_charge_WebApp.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <p>
+              Developed Android app with UI design in Android Studio.
+              Implemented user authentication using SQLite database.
+              Technologies: Android, SQLite
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SudariDev/MAD_Quick_Butzz'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon phone-icon"
+          />
+          <p class="contact-info">+94 711297645</p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p class="contact-info">
+            <a href="mailto:wasundarasamaranayaka@gmail.com"
+              >wasundarasamaranayaka@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon linkedin-icon"
+          />
+          <p class="contact-info">
+            <a href="https://www.linkedin.com/in/wasundara-samaranayaka/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Wasundara Samaranayaka. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
